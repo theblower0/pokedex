@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Pokedex</title>
+</head>
+
+<body>
+    <div class="nav-banner">
+        <h1>PokeDex</h1>
+    </div>
+    <div class="screens">
+        <div class="left-screen border">
+            <div class="top-lights">
+
+                <div class="bg-light-circle1 border">
+                    <div class="bg-light-circle2 centrar">
+                        <div class="bg-light-circle3 esquina-izquierda"></div>
+                    </div>
+
+                </div>
+
+                <div class="sm-lights">
+                    <div id="item-rojo" class="sm-lights-item">
+                        <div id="color-rojo" class="sm-lights-item2 esquina-izquierda"></div>
+                    </div>
+                    <div id="item-amarillo" class="sm-lights-item">
+                        <div id="color-amarillo" class="sm-lights-item2 esquina-izquierda"></div>
+                    </div>
+                    <div id="item-verde" class="sm-lights-item">
+                        <div id="color-verde" class="sm-lights-item2 esquina-izquierda"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <svg height="80" width="350" class="left-svg">
+                <polyline points="0,30 50,30 90,10 350,10" style="fill: none; stroke: black; stroke-width: 4" />
+                <polyline points="10,40 50,40 90,20 340,20" style="fill: none; stroke: black; stroke-width: 3" />
+            </svg>
+
+            <div class="main-screen">
+
+                <div class="border-screen centrar">
+                    <div class="screen centrar"><img src="assets/pokeball.png" alt="Imagen pokemon" id="pokeImage">
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttons-section">
+                <div class="circle-btn border"></div>
+                <div class="row-btns">
+                    <div class="btn border"></div>
+                    <div class="btn2 border"></div>
+                </div>
+            </div>
+
+            <div class="input-section">
+                <div class="input-screen border centrar">
+                    <input type="text" class="border" id="pokeName">
+                </div>
+
+                <div class="right-nav-container lado-derecho">
+                    <div class="nav-button">
+                        <div class="nav-center-circle"></div>
+                        <div class="nav-button-vertical"></div>
+                        <div class="nav-button-horizontal">
+                            <div class="border-top"></div>
+                            <div class="border-bottom"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="right-screen border">
+            <svg height="50" width="350" class="left-svg">
+                <polyline points="0,0 200,0 250,40 350,40" style="fill: none; stroke: black; stroke-width: 4" />
+            </svg>
+
+            <div class="screen-data border centrar" id="screen-data">
+                <div class="bars" id="bars"></div>
+                <!-- <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="col">grass</td>
+                        </tr>
+                        <tr>
+                            <td scope="col">normal</td>
+                        </tr>
+                    </tbody>
+                </table> -->
+                <!-- <div class="pokemon-type">
+                    <p>Type</p>
+                </div> -->
+
+            </div>
+            <div class="right-lights">
+                <div class="white-square border"></div>
+                <div class="white-square border"></div>
+                <div id="item-amarillo" class="sm-lights-item yellow-light">
+                    <div id="color-amarillo" class="sm-lights-item2 esquina-izquierda"></div>
+                </div>
+            </div>
+            <div class="botones-right">
+                <input type="button" value="Random" class="boton-random border" id="randomButton">
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
